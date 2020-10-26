@@ -28,7 +28,7 @@
     transition: .3s;
     border-radius: 50%;
     background-color: $--carousel-arrow-background;
-    color: $--color-white;
+    color: $--color-background;
     position: absolute;
     top: 50%;
     z-index: 10;
@@ -138,7 +138,7 @@
     opacity: 0.48;
     width: $--carousel-indicator-width;
     height: $--carousel-indicator-height;
-    background-color: $--color-white;
+    background-color: $--color-background;
     border: none;
     outline: none;
     padding: 0;

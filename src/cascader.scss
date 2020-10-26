@@ -113,7 +113,7 @@
       .el-icon-close {
         flex: none;
         background-color: $--color-text-placeholder;
-        color: $--color-white;
+        color: $--color-background;
 
         &:hover {
           background-color: $--color-text-secondary;
@@ -145,7 +145,8 @@
     outline: none;
     cursor: pointer;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background: $--cascader-node-background-hover;
     }
 

@@ -65,7 +65,7 @@
       }
 
       &:not(.is-disabled):hover,
-      &:not(.is-disabled):focus{
+      &:not(.is-disabled):focus {
         background-color: #fff;
       }
     }
@@ -107,7 +107,7 @@
     & .el-menu {
       & .el-menu-item,
       & .el-submenu__title {
-        background-color: $--color-white;
+        background-color: $--color-background;
         float: none;
         height: 36px;
         line-height: 36px;
@@ -214,7 +214,7 @@
     }
   }
 }
-  
+
 @include b(submenu) {
   list-style: none;
   margin: 0;

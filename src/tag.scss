@@ -2,90 +2,90 @@
 @import "common/var";
 
 @mixin genTheme($backgroundColorWeight, $borderColorWeight, $fontColorWeight, $hoverColorWeight) {
-  background-color: mix($--tag-primary-color, $--color-white, $backgroundColorWeight);
-  border-color: mix($--tag-primary-color, $--color-white, $borderColorWeight);
-  color: mix($--tag-primary-color, $--color-white, $fontColorWeight);
+  background-color: mix($--tag-primary-color, $--color-background, $backgroundColorWeight);
+  border-color: mix($--tag-primary-color, $--color-background, $borderColorWeight);
+  color: mix($--tag-primary-color, $--color-background, $fontColorWeight);
 
   @include when(hit) {
     border-color: $--tag-primary-color;
   }
 
   .el-tag__close {
-    color: mix($--tag-primary-color, $--color-white, $fontColorWeight);
+    color: mix($--tag-primary-color, $--color-background, $fontColorWeight);
     &:hover {
-      color: $--color-white;
-      background-color: mix($--tag-primary-color, $--color-white, $hoverColorWeight);
+      color: $--color-background;
+      background-color: mix($--tag-primary-color, $--color-background, $hoverColorWeight);
     }
   }
 
   &.el-tag--info {
-    background-color: mix($--tag-info-color, $--color-white, $backgroundColorWeight);
-    border-color: mix($--tag-info-color, $--color-white, $borderColorWeight);
-    color: mix($--tag-info-color, $--color-white, $fontColorWeight);
+    background-color: mix($--tag-info-color, $--color-background, $backgroundColorWeight);
+    border-color: mix($--tag-info-color, $--color-background, $borderColorWeight);
+    color: mix($--tag-info-color, $--color-background, $fontColorWeight);
 
     @include when(hit) {
       border-color: $--tag-info-color;
     }
 
     .el-tag__close {
-      color: mix($--tag-info-color, $--color-white, $fontColorWeight);
+      color: mix($--tag-info-color, $--color-background, $fontColorWeight);
       &:hover {
-        color: $--color-white;
-        background-color: mix($--tag-info-color, $--color-white, $hoverColorWeight);
+        color: $--color-background;
+        background-color: mix($--tag-info-color, $--color-background, $hoverColorWeight);
       }
     }
   }
 
   &.el-tag--success {
-    background-color: mix($--tag-success-color, $--color-white, $backgroundColorWeight);
-    border-color: mix($--tag-success-color, $--color-white, $borderColorWeight);
-    color: mix($--tag-success-color, $--color-white, $fontColorWeight);
+    background-color: mix($--tag-success-color, $--color-background, $backgroundColorWeight);
+    border-color: mix($--tag-success-color, $--color-background, $borderColorWeight);
+    color: mix($--tag-success-color, $--color-background, $fontColorWeight);
 
     @include when(hit) {
       border-color: $--tag-success-color;
     }
 
     .el-tag__close {
-      color: mix($--tag-success-color, $--color-white, $fontColorWeight);
+      color: mix($--tag-success-color, $--color-background, $fontColorWeight);
       &:hover {
-        color: $--color-white;
-        background-color: mix($--tag-success-color, $--color-white, $hoverColorWeight);
+        color: $--color-background;
+        background-color: mix($--tag-success-color, $--color-background, $hoverColorWeight);
       }
     }
   }
 
   &.el-tag--warning {
-    background-color: mix($--tag-warning-color, $--color-white, $backgroundColorWeight);
-    border-color: mix($--tag-warning-color, $--color-white, $borderColorWeight);
-    color: mix($--tag-warning-color, $--color-white, $fontColorWeight);
+    background-color: mix($--tag-warning-color, $--color-background, $backgroundColorWeight);
+    border-color: mix($--tag-warning-color, $--color-background, $borderColorWeight);
+    color: mix($--tag-warning-color, $--color-background, $fontColorWeight);
 
     @include when(hit) {
       border-color: $--tag-warning-color;
     }
 
     .el-tag__close {
-      color: mix($--tag-warning-color, $--color-white, $fontColorWeight);
+      color: mix($--tag-warning-color, $--color-background, $fontColorWeight);
       &:hover {
-        color: $--color-white;
-        background-color: mix($--tag-warning-color, $--color-white, $hoverColorWeight);
+        color: $--color-background;
+        background-color: mix($--tag-warning-color, $--color-background, $hoverColorWeight);
       }
     }
   }
 
   &.el-tag--danger {
-    background-color: mix($--tag-danger-color, $--color-white, $backgroundColorWeight);
-    border-color: mix($--tag-danger-color, $--color-white, $borderColorWeight);
-    color: mix($--tag-danger-color, $--color-white, $fontColorWeight);
+    background-color: mix($--tag-danger-color, $--color-background, $backgroundColorWeight);
+    border-color: mix($--tag-danger-color, $--color-background, $borderColorWeight);
+    color: mix($--tag-danger-color, $--color-background, $fontColorWeight);
 
     @include when(hit) {
       border-color: $--tag-danger-color;
     }
 
     .el-tag__close {
-      color: mix($--tag-danger-color, $--color-white, $fontColorWeight);
+      color: mix($--tag-danger-color, $--color-background, $fontColorWeight);
       &:hover {
-        color: $--color-white;
-        background-color: mix($--tag-danger-color, $--color-white, $hoverColorWeight);
+        color: $--color-background;
+        background-color: mix($--tag-danger-color, $--color-background, $hoverColorWeight);
       }
     }
   }

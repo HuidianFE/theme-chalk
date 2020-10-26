@@ -20,7 +20,7 @@
     margin: 0 auto;
     padding: 10px;
     border-radius: 50%;
-    color: $--color-white;
+    color: $--color-background;
     background-color: $--color-primary;
     font-size: 0;
 
@@ -48,7 +48,8 @@
       margin: 0;
     }
 
-    i, span {
+    i,
+    span {
       font-size: 14px;
     }
 
@@ -62,7 +63,7 @@
   border: 1px solid $--transfer-border-color;
   border-radius: $--transfer-border-radius;
   overflow: hidden;
-  background: $--color-white;
+  background: $--color-background;
   display: inline-block;
   vertical-align: middle;
   width: $--transfer-panel-width;
@@ -160,7 +161,7 @@
     padding-left: 15px;
     border-bottom: 1px solid $--transfer-border-color;
     box-sizing: border-box;
-    color: $--color-black;
+    color: $--color-front;
 
     .el-checkbox {
       display: block;
@@ -184,7 +185,7 @@
 
   .el-transfer-panel__footer {
     height: $--transfer-panel-footer-height;
-    background: $--color-white;
+    background: $--color-background;
     margin: 0;
     padding: 0;
     border-top: 1px solid $--transfer-border-color;

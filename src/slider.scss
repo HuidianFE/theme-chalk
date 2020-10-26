@@ -5,7 +5,6 @@
 @import "common/var";
 
 @include b(slider) {
-
   @include utils-clearfix;
 
   @include e(runway) {
@@ -122,7 +121,7 @@
     width: $--slider-button-size;
     height: $--slider-button-size;
     border: solid 2px $--slider-main-background-color;
-    background-color: $--color-white;
+    background-color: $--color-background;
     border-radius: 50%;
     transition: .2s;
     user-select: none;
@@ -202,8 +201,7 @@
           padding-right: 5px;
         }
         .el-input-number__decrease,
-        .el-input-number__increase
-        {
+        .el-input-number__increase {
           top: $--input-small-height;
           margin-top: -1px;
           border: $--input-border;
@@ -226,15 +224,13 @@
         }
         &:hover {
           .el-input-number__decrease,
-          .el-input-number__increase
-          {
+          .el-input-number__increase {
             border-color: $--input-hover-border;
           }
         }
         &:active {
           .el-input-number__decrease,
-          .el-input-number__increase
-          {
+          .el-input-number__increase {
             border-color: $--input-focus-border;
           }
         }

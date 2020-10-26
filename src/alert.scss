@@ -8,7 +8,7 @@
   box-sizing: border-box;
   border-radius: $--alert-border-radius;
   position: relative;
-  background-color: $--color-white;
+  background-color: $--color-background;
   overflow: hidden;
   opacity: 1;
   display: flex;
@@ -23,10 +23,10 @@
 
   @include when(dark) {
     .el-alert__closebtn {
-      color: $--color-white;
+      color: $--color-background;
     }
     .el-alert__description {
-      color: $--color-white;
+      color: $--color-background;
     }
   }
 
@@ -46,7 +46,7 @@
 
     &.is-dark {
       background-color: $--color-success;
-      color: $--color-white;
+      color: $--color-background;
     }
   }
 
@@ -58,7 +58,7 @@
 
     &.is-dark {
       background-color: $--color-info;
-      color: $--color-white;
+      color: $--color-background;
     }
 
     .el-alert__description {
@@ -78,7 +78,7 @@
 
     &.is-dark {
       background-color: $--color-warning;
-      color: $--color-white;
+      color: $--color-background;
     }
   }
 
@@ -94,7 +94,7 @@
 
     &.is-dark {
       background-color: $--color-danger;
-      color: $--color-white;
+      color: $--color-background;
     }
   }
 

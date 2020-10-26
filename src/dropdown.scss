@@ -55,8 +55,10 @@
     margin: 0 3px;
   }
 
-  .el-dropdown-selfdefine { // 自定义
-    &:focus:active, &:focus:not(.focusing) {
+  .el-dropdown-selfdefine {
+    // 自定义
+    &:focus:active,
+    &:focus:not(.focusing) {
       outline-width: 0;
     }
   }
@@ -69,7 +71,7 @@
   z-index: 10;
   padding: 10px 0;
   margin: 5px 0;
-  background-color: $--color-white;
+  background-color: $--color-background;
   border: 1px solid $--border-color-lighter;
   border-radius: $--border-radius-base;
   box-shadow: $--dropdown-menu-box-shadow;
@@ -83,7 +85,8 @@
     color: $--color-text-regular;
     cursor: pointer;
     outline: none;
-    &:not(.is-disabled):hover, &:focus {
+    &:not(.is-disabled):hover,
+    &:focus {
       background-color: $--dropdown-menuItem-hover-fill;
       color: $--dropdown-menuItem-hover-color;
     }
@@ -104,7 +107,7 @@
         height: $divided-offset;
         display: block;
         margin: 0 -20px;
-        background-color: $--color-white;
+        background-color: $--color-background;
       }
     }
 
