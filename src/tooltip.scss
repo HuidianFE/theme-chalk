@@ -2,12 +2,14 @@
 @import "common/var";
 
 @include b(tooltip) {
-  &:focus:not(.focusing), &:focus:hover {
+  &:focus:not(.focusing),
+  &:focus:hover {
     outline-width: 0;
   }
   @include e(popper) {
     position: absolute;
-    border-radius: 4px;
+    // border-radius: 4px;
+    border: 1px solid $--tooltip-border-color;
     padding: $--tooltip-padding;
     z-index: $--index-popper;
     font-size: $--tooltip-font-size;

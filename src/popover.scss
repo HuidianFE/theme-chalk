@@ -6,7 +6,7 @@
   position: absolute;
   background: $--popover-background-color;
   min-width: 150px;
-  border-radius: 4px;
+  border-radius: 0;
   border: 1px solid $--popover-border-color;
   padding: $--popover-padding;
   z-index: $--index-popper;
@@ -29,12 +29,14 @@
   }
 
   @include e(reference) {
-    &:focus:not(.focusing), &:focus:hover {
+    &:focus:not(.focusing),
+    &:focus:hover {
       outline-width: 0;
     }
   }
 
-  &:focus:active, &:focus {
+  &:focus:active,
+  &:focus {
     outline-width: 0;
   }
 }
