@@ -31,3 +31,5 @@ import '@hd-fe/element-theme-chalk/lib/select.css';
 
 // ...
 ```
+
+重构了 `element-theme-chalk` 变量体系，优化了不合理的变量使用
