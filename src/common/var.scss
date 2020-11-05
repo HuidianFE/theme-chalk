@@ -483,7 +483,7 @@ $--cascader-menu-shadow: $--box-shadow-light !default;
 $--cascader-node-background-hover: $--background-color-base !default;
 $--cascader-node-color-disabled: $--color-text-placeholder !default;
 $--cascader-color-empty: $--color-text-placeholder !default;
-$--cascader-tag-background: #f0f2f5;
+$--cascader-tag-background: #f0f2f5 !default;
 
 /* Group
 -------------------------- */
@@ -668,7 +668,7 @@ $--pagination-hover-color: $--color-primary !default;
 /* Popup
 -------------------------- */
 /// color||Color|0
-$--popup-modal-background-color: $--color-front !default;
+$--popup-modal-background-color: $--color-black !default;
 /// opacity||Other|1
 $--popup-modal-opacity: 0.5 !default;
 
@@ -902,6 +902,7 @@ $--main-padding: 20px !default;
 $--timeline-node-size-normal: 12px !default;
 $--timeline-node-size-large: 14px !default;
 $--timeline-node-color: $--border-color-light !default;
+$--timeline-node-background: $--color-background !default;
 
 /* Backtop
 --------------------------*/
