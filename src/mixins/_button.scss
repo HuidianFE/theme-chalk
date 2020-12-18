@@ -60,7 +60,7 @@
     &:hover,
     &:focus,
     &:active {
-      color: $--font-color-disabled-base;
+      color: $--color-white;
       background-color: mix($background-color, $--color-background);
       border-color: mix($border-color, $--color-background);
     }
