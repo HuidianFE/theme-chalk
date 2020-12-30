@@ -27,7 +27,7 @@
   &:hover,
   &:focus {
     outline: none;
-    background-color: $--menu-item-hover-fill;
+    color: $--menu-item-font-color-active;
   }
 
   @include when(disabled) {
@@ -38,7 +38,6 @@
 }
 
 @include b(menu) {
-  border-right: solid 1px $--border-color-base;
   list-style: none;
   position: relative;
   margin: 0;
@@ -107,7 +106,7 @@
     & .el-menu {
       & .el-menu-item,
       & .el-submenu__title {
-        // background-color: $--color-background;
+        //background-color: $--color-background;
         float: none;
         height: 36px;
         line-height: 36px;
@@ -226,7 +225,15 @@
     @include menu-item;
 
     &:hover {
-      background-color: $--menu-item-hover-fill;
+      color: $--menu-item-font-color-active;
+
+      > .icon {
+        color: $--color-primary;
+      }
+
+      > .el-submenu__icon-arrow {
+        color: $--menu-item-font-color-active;
+      }
     }
   }
   & .el-menu {
@@ -237,6 +244,7 @@
     line-height: 50px;
     padding: 0 45px;
     min-width: 200px;
+    background-color: $--color-background;
   }
   @include e(icon-arrow) {
     position: absolute;
@@ -249,6 +257,15 @@
   @include when(active) {
     .el-submenu__title {
       border-bottom-color: $--color-primary;
+      color: $--menu-item-font-color-active;
+
+      > .icon {
+        color: $--color-primary;
+      }
+
+      > .el-submenu__icon-arrow {
+        color: $--menu-item-font-color-active;
+      }
     }
   }
   @include when(opened) {
