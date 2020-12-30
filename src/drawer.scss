@@ -160,6 +160,10 @@ $directions: rtl, ltr, ttb, btt;
     font-size: $--font-size-extra-large;
     color: inherit;
     background-color: transparent;
+
+    &:focus {
+      outline-width: 0;
+    }
   }
 
   &__body {
@@ -196,6 +200,10 @@ $directions: rtl, ltr, ttb, btt;
   &.btt {
     bottom: 0;
   }
+
+  &:focus {
+    outline-width: 0;
+  }
 }
 
 .el-drawer__container {
@@ -206,6 +214,10 @@ $directions: rtl, ltr, ttb, btt;
   bottom: 0;
   height: 100%;
   width: 100%;
+
+  &:focus {
+    outline-width: 0;
+  }
 }
 
 .el-drawer-fade-enter-active {
