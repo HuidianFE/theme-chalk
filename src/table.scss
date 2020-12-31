@@ -445,7 +445,7 @@
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    height: 34px;
+    height: 20px;
     width: 24px;
     vertical-align: middle;
     cursor: pointer;
@@ -486,9 +486,16 @@
   }
 
   @include m(striped) {
+    .cell {
+      line-height: 24px;
+    }
+    th.is-leaf {
+      border-bottom: 0;
+    }
     & .el-table__body {
       & tr td {
-        background: $--table-background-color-striped1
+        background: $--table-background-color-striped1;
+        border-bottom: 0;
       }
       & tr.el-table__row--striped {
         td {
