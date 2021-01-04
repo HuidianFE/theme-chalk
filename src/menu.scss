@@ -210,8 +210,8 @@
   }
   @include when(active) {
     position: relative;
-    color: $hd--color-text-primary;
-    background-color: rgba($color: $hd--color-primary, $alpha: .4);
+    color: $--color-front;
+    background-color: rgba($color: $--color-primary, $alpha: .4);
 
     &::before{
       content: '';
@@ -220,7 +220,7 @@
       top: 0;
       width: 6px;
       height: 100%;
-      background-color: $hd--color-primary;
+      background-color: $--color-primary;
     }
     i {
       color: inherit;
@@ -258,7 +258,7 @@
     min-width: 200px;
     background-color: $--color-background;
     &.is-active {
-      background-color: rgba($color: $hd--color-primary, $alpha: .4);
+      background-color: rgba($color: $--color-primary, $alpha: .4);
     }
   }
   @include e(icon-arrow) {
