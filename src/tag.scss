@@ -9,6 +9,9 @@
   @include when(hit) {
     border-color: $--tag-primary-color;
   }
+  & + .el-tag {
+    margin-left: 10px;
+  }
 
   .el-tag__close {
     color: mix($--tag-primary-color, $--color-background, $fontColorWeight);

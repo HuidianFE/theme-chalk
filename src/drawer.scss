@@ -144,6 +144,9 @@ $directions: rtl, ltr, ttb, btt;
     padding-bottom: 0;
     & > :first-child {
       flex: 1;
+      &:focus {
+        outline-width: 0;
+      }
     }
   }
 

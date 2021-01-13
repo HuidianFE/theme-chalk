@@ -33,15 +33,16 @@
     padding: 0 10px;
     cursor: pointer;
     font-size: $--font-size-base;
+    color: $--color-text-regular;
 
     &:hover {
       background-color: $--dropdown-menuItem-hover-fill;
-      color: $--dropdown-menuItem-hover-color;
+      // color: $--dropdown-menuItem-hover-color;
     }
 
     @include when(active) {
-      background-color: $--color-primary;
-      color: $--color-background;
+      background-color: $--dropdown-menuItem-hover-fill;
+      color: $--color-primary;
     }
   }
 

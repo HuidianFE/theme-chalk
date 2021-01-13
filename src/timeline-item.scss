@@ -14,7 +14,8 @@
   @include e(tail) {
     position: absolute;
     left: 4px;
-    height: 100%;
+    top: 8px;
+    height: calc(100% - 8px);
     border-left: 2px solid $--timeline-node-color;
   }
 
@@ -25,19 +26,20 @@
 
   @include e(node) {
     position: absolute;
-    background-color: $--timeline-node-color;
+    // background-color: $--timeline-node-color;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid $--color-primary;
 
     @include m(normal) {
-      left: -1px;
+      left: 1px;
       width: $--timeline-node-size-normal;
       height: $--timeline-node-size-normal;
     }
     @include m(large) {
-      left: -2px;
+      left: 0;
       width: $--timeline-node-size-large;
       height: $--timeline-node-size-large;
     }
