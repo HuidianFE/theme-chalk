@@ -7,6 +7,7 @@
   position: relative;
   margin: 0 auto 50px;
   background: $--dialog-background-color;
+  border: 1px solid $--dialog-border-color;
   border-radius: $--border-radius-small;
   box-shadow: $--dialog-box-shadow;
   box-sizing: border-box;
@@ -33,6 +34,7 @@
   @include e(header) {
     padding: $--dialog-padding-primary;
     padding-bottom: 10px;
+    border-bottom: 1px solid $--dialog-border-color;
   }
 
   @include e(headerbtn) {
@@ -50,7 +52,8 @@
       color: $--color-info;
     }
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       .el-dialog__close {
         color: $--color-primary;
       }

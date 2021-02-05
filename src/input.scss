@@ -39,7 +39,7 @@
 
   & .el-input__count {
     color: $--color-info;
-    background: $--color-white;
+    background: $--color-background;
     position: absolute;
     font-size: 12px;
     bottom: 5px;
@@ -96,7 +96,7 @@
     font-size: 12px;
 
     .el-input__count-inner {
-      background: $--color-white;
+      background: $--color-background;
       line-height: initial;
       display: inline-block;
       padding: 0 5px;
@@ -270,7 +270,7 @@
   display: inline-table;
   width: 100%;
   border-collapse: separate;
-  border-spacing:0;
+  border-spacing: 0;
 
   > .el-input__inner {
     vertical-align: middle;

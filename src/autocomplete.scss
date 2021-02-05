@@ -16,7 +16,7 @@
   border-radius: $--border-radius-base;
   border: 1px solid $--border-color-light;
   box-sizing: border-box;
-  background-color: $--color-white;
+  background-color: $--color-background;
 
   @include e(wrap) {
     max-height: 280px;
@@ -51,7 +51,7 @@
 
     &.divider {
       margin-top: 6px;
-      border-top: 1px solid $--color-black;
+      border-top: 1px solid $--color-front;
     }
 
     &.divider:last-child {
@@ -69,7 +69,7 @@
       @include utils-vertical-center;
 
       &:hover {
-        background-color: $--color-white;
+        background-color: $--color-background;
       }
     }
 

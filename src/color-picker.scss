@@ -50,16 +50,12 @@
 
   @include e(bar) {
     position: relative;
-    background: linear-gradient(
-      to right, #f00 0%,
-      #ff0 17%, #0f0 33%,
-      #0ff 50%, #00f 67%,
-      #f0f 83%, #f00 100%);
+    background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);
     height: 100%;
   }
-
   @include e(thumb) {
     position: absolute;
+
     cursor: pointer;
     box-sizing: border-box;
     left: 0;
@@ -72,20 +68,13 @@
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
     z-index: 1;
   }
-
   @include when(vertical) {
     width: 12px;
     height: 180px;
     padding: 2px 0;
-
     .el-color-hue-slider__bar {
-      background: linear-gradient(
-        to bottom, #f00 0%,
-        #ff0 17%, #0f0 33%,
-        #0ff 50%, #00f 67%,
-        #f0f 83%, #f00 100%);
+      background: linear-gradient(to bottom, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);
     }
-
     .el-color-hue-slider__thumb {
       left: 0;
       top: 0;
@@ -94,12 +83,10 @@
     }
   }
 }
-
 @include b(color-svpanel) {
   position: relative;
   width: 280px;
   height: 180px;
-
   @include e(('white', 'black')) {
     position: absolute;
     top: 0;
@@ -107,44 +94,36 @@
     right: 0;
     bottom: 0;
   }
-
   @include e('white') {
-    background: linear-gradient(to right, #fff, rgba(255,255,255,0));
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
   }
-
   @include e('black') {
-    background: linear-gradient(to top, #000, rgba(0,0,0,0));
+    background: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
   }
 
   @include e(cursor) {
     position: absolute;
-
     > div {
       cursor: head;
       width: 4px;
       height: 4px;
-      box-shadow: 0 0 0 1.5px #fff, inset 0 0 1px 1px rgba(0,0,0,0.3), 0 0 1px 2px rgba(0,0,0,0.4);
+      box-shadow: 0 0 0 1.5px #fff, inset 0 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 1px 2px rgba(0, 0, 0, 0.4);
       border-radius: 50%;
       transform: translate(-2px, -2px);
     }
   }
 }
-
 @include b(color-alpha-slider) {
   position: relative;
   box-sizing: border-box;
   width: 280px;
   height: 12px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);
-
   @include e(bar) {
     position: relative;
-    background: linear-gradient(
-      to right, rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
     height: 100%;
   }
-
   @include e(thumb) {
     position: absolute;
     cursor: pointer;
@@ -159,17 +138,12 @@
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
     z-index: 1;
   }
-
   @include when(vertical) {
     width: 20px;
     height: 180px;
-
     .el-color-alpha-slider__bar {
-      background: linear-gradient(
-        to bottom, rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
     }
-
     .el-color-alpha-slider__thumb {
       left: 0;
       top: 0;
@@ -178,30 +152,25 @@
     }
   }
 }
-
 @include b(color-dropdown) {
   width: 300px;
-
   @include e(main-wrapper) {
     margin-bottom: 6px;
-
     &::after {
       content: "";
       display: table;
       clear: both;
     }
   }
-
   @include e(btns) {
     margin-top: 6px;
     text-align: right;
   }
-
   @include e(value) {
     float: left;
     line-height: 26px;
     font-size: 12px;
-    color: $--color-black;
+    color: $--color-front;
     width: 160px;
   }
 
@@ -215,7 +184,6 @@
     background-color: transparent;
     outline: none;
     font-size: 12px;
-
     &[disabled] {
       color: #cccccc;
       cursor: not-allowed;
@@ -225,7 +193,6 @@
       border-color: $--color-primary;
     }
   }
-
   @include e(link-btn) {
     cursor: pointer;
     color: $--color-primary;
@@ -237,71 +204,57 @@
     }
   }
 }
-
 @include b(color-picker) {
   display: inline-block;
   position: relative;
   line-height: normal;
   height: 40px;
-
   @include when(disabled) {
     .el-color-picker__trigger {
       cursor: not-allowed;
     }
   }
-
   @include m(medium) {
     height: 36px;
-
     .el-color-picker__trigger {
       height: 36px;
       width: 36px;
     }
-
     .el-color-picker__mask {
       height: 34px;
       width: 34px;
     }
   }
-
   @include m(small) {
     height: 32px;
-
     .el-color-picker__trigger {
       height: 32px;
       width: 32px;
     }
-
     .el-color-picker__mask {
       height: 30px;
       width: 30px;
     }
-
     .el-color-picker__icon,
     .el-color-picker__empty {
       transform: translate3d(-50%, -50%, 0) scale(0.8);
     }
   }
-
   @include m(mini) {
     height: 28px;
-
     .el-color-picker__trigger {
       height: 28px;
       width: 28px;
     }
-
     .el-color-picker__mask {
       height: 26px;
       width: 26px;
     }
-
     .el-color-picker__icon,
     .el-color-picker__empty {
       transform: translate3d(-50%, -50%, 0) scale(0.8);
     }
   }
-
   @include e(mask) {
     height: 38px;
     width: 38px;
@@ -313,20 +266,18 @@
     cursor: not-allowed;
     background-color: rgba(255, 255, 255, .7);
   }
-
   @include e(trigger) {
     display: inline-block;
     box-sizing: border-box;
     height: 40px;
     width: 40px;
     padding: 4px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid $--colorpicker-border-color;
     border-radius: 4px;
     font-size: 0;
     position: relative;
     cursor: pointer;
   }
-
   @include e(color) {
     position: relative;
     display: block;
@@ -336,14 +287,13 @@
     width: 100%;
     height: 100%;
     text-align: center;
-
     @include when(alpha) {
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);
     }
   }
-
   @include e(color-inner) {
     position: absolute;
+
     left: 0;
     top: 0;
     right: 0;
@@ -358,7 +308,6 @@
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
   }
-
   @include e(icon) {
     display: inline-block;
     position: absolute;
@@ -366,17 +315,16 @@
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
-    color: $--color-white;
+    color: $--color-background;
     text-align: center;
     font-size: 12px;
   }
-
   @include e(panel) {
     position: absolute;
     z-index: 10;
     padding: 6px;
     box-sizing: content-box;
-    background-color: $--color-white;
+    background-color: $--color-background;
     border: 1px solid $--border-color-lighter;
     border-radius: $--border-radius-base;
     box-shadow: $--dropdown-menu-box-shadow;

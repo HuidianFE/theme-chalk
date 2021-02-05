@@ -98,11 +98,11 @@
       max-width: 100%;
       margin: 2px 0 2px 6px;
       text-overflow: ellipsis;
-      background: $--cascader-tag-background;
+      // background: $--cascader-tag-background;
 
-      &:not(.is-hit) {
-        border-color: transparent;
-      }
+      // &:not(.is-hit) {
+      //   border-color: transparent;
+      // }
 
       > span {
         flex: 1;
@@ -113,7 +113,7 @@
       .el-icon-close {
         flex: none;
         background-color: $--color-text-placeholder;
-        color: $--color-white;
+        color: $--color-background;
 
         &:hover {
           background-color: $--color-text-secondary;
@@ -145,7 +145,8 @@
     outline: none;
     cursor: pointer;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background: $--cascader-node-background-hover;
     }
 
