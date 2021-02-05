@@ -28,8 +28,8 @@
 
   /* 照片墙模式 */
   @include m(picture-card) {
-    background-color: #fbfdff;
-    border: 1px dashed #c0ccda;
+    // background-color: #fbfdff;
+    border: 1px dashed $--border-color-base;
     border-radius: 6px;
     box-sizing: border-box;
     width: 148px;
@@ -59,8 +59,8 @@
 }
 
 @include b(upload-dragger) {
-  background-color: #fff;
-  border: 1px dashed #d9d9d9;
+  // background-color: #fff;
+  border: 1px dashed $--border-color-base;
   border-radius: 6px;
   box-sizing: border-box;
   width: 360px;
@@ -114,7 +114,7 @@
   list-style: none;
 
   @include e(item) {
-    transition: all .5s cubic-bezier(.55,0,.1,1);
+    transition: all .5s cubic-bezier(.55, 0, .1, 1);
     font-size: 14px;
     color: $--color-text-regular;
     line-height: 1.8;
@@ -174,7 +174,6 @@
       opacity: 1;
       color: $--color-primary;
     }
-    
     &:hover {
       background-color: $--background-color-base;
 
@@ -192,25 +191,30 @@
         display: block;
       }
 
-      .el-upload-list__item-name:hover, .el-upload-list__item-name:focus {
+      .el-upload-list__item-name:hover,
+      .el-upload-list__item-name:focus {
         color: $--link-hover-color;
         cursor: pointer;
       }
 
-      &:focus:not(:hover) {  /* 键盘focus */
+      &:focus:not(:hover) {
+        /* 键盘focus */
         .el-icon-close-tip {
           display: inline-block;
         }
       }
 
-      &:not(.focusing):focus, &:active { /* click时 */
+      &:not(.focusing):focus,
+      &:active {
+        /* click时 */
         outline-width: 0;
         .el-icon-close-tip {
           display: none;
         }
       }
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         .el-upload-list__item-status-label {
           display: none;
         }
@@ -270,8 +274,8 @@
 
     .el-upload-list__item {
       overflow: hidden;
-      background-color: #fff;
-      border: 1px solid #c0ccda;
+      // background-color: #fff;
+      border: 1px solid $--border-color-base;
       border-radius: 6px;
       box-sizing: border-box;
       width: 148px;
@@ -281,7 +285,7 @@
 
       .el-icon-check,
       .el-icon-circle-check {
-        color: $--color-white;
+        color: $--color-background;
       }
 
       .el-icon-close {
@@ -316,7 +320,7 @@
       background: #13ce66;
       text-align: center;
       transform: rotate(45deg);
-      box-shadow: 0 0 1pc 1px rgba(0,0,0,0.2);
+      box-shadow: 0 0 1pc 1px rgba(0, 0, 0, 0.2);
 
       i {
         font-size: 12px;
@@ -342,7 +346,7 @@
         display: inline-block;
         content: "";
         height: 100%;
-        vertical-align: middle
+        vertical-align: middle;
       }
 
       span {
@@ -385,8 +389,8 @@
     .el-upload-list__item {
       overflow: hidden;
       z-index: 0;
-      background-color: #fff;
-      border: 1px solid #c0ccda;
+      // background-color: #fff;
+      border: 1px solid $--border-color-base;
       border-radius: 6px;
       box-sizing: border-box;
       margin-top: 10px;
@@ -395,7 +399,7 @@
 
       .el-icon-check,
       .el-icon-circle-check {
-        color: $--color-white;
+        color: $--color-background;
       }
 
       &:hover {
@@ -431,7 +435,7 @@
       position: relative;
       z-index: 1;
       margin-left: -80px;
-      background-color: $--color-white
+      background-color: $--color-background;
     }
 
     .el-upload-list__item-name {
@@ -498,7 +502,7 @@
     background: #13ce66;
     text-align: center;
     transform: rotate(45deg);
-    box-shadow: 0 0 1pc 1px rgba(0,0,0,0.2);
+    box-shadow: 0 0 1pc 1px rgba(0, 0, 0, 0.2);
 
     i {
       font-size: 12px;
@@ -538,7 +542,7 @@
 
     .btn {
       display: inline-block;
-      color: $--color-white;
+      color: $--color-background;
       font-size: 14px;
       cursor: pointer;
       vertical-align: middle;
@@ -567,7 +571,7 @@
       }
 
       i {
-        color: $--color-white;
+        color: $--color-background;
         display: block;
         font-size: 24px;
         line-height: inherit;
@@ -580,7 +584,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: $--color-white;
+    background-color: $--color-background;
     height: 36px;
     width: 100%;
     overflow: hidden;

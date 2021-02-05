@@ -9,7 +9,7 @@
   @include e(content) {
     background-color: $--badge-background-color;
     border-radius: $--badge-radius;
-    color: $--color-white;
+    color: $--color-background;
     display: inline-block;
     font-size: $--badge-font-size;
     height: $--badge-size;
@@ -17,7 +17,7 @@
     padding: 0 $--badge-padding;
     text-align: center;
     white-space: nowrap;
-    border: 1px solid $--color-white;
+    border: 1px solid $--color-background;
 
     @include when(fixed) {
       position: absolute;

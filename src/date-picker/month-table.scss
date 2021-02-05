@@ -76,7 +76,8 @@
     }
 
     &.current:not(.disabled) .cell {
-      color: $--datepicker-active-color;
+      color: $--color-white;
+      background-color: $--datepicker-active-color;
     }
   }
 }

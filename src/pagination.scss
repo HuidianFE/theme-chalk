@@ -84,7 +84,7 @@
   }
 
   .btn-next {
-    padding-left: 12px;    
+    padding-left: 12px;
   }
 
   .el-pager li.disabled {
@@ -168,7 +168,6 @@
     line-height: 18px;
     padding: 0 2px;
     height: $--pagination-button-height;
-      
     text-align: center;
     margin: 0 2px;
     box-sizing: border-box;
@@ -204,7 +203,8 @@
       }
     }
 
-    .btn-prev, .btn-next {
+    .btn-prev,
+    .btn-next {
       padding: 0;
 
       &:disabled {
@@ -219,7 +219,7 @@
 
       &.active {
         background-color: $--color-primary;
-        color: $--color-white;
+        color: $--color-front;
       }
     }
 

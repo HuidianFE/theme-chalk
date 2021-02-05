@@ -12,10 +12,9 @@
   display: inline-block;
   position: relative;
 
-  .el-select__tags
-    >span {
-      display: contents;
-    }
+  .el-select__tags > span {
+    display: contents;
+  }
 
   &:hover {
     .el-input__inner {
@@ -133,7 +132,7 @@
       background-color: $--color-text-placeholder;
       right: -7px;
       top: 0;
-      color: $--color-white;
+      color: $--color-background;
 
       &:hover {
         background-color: $--color-text-secondary;
