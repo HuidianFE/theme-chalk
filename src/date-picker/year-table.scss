@@ -45,7 +45,7 @@
     }
 
     &.current:not(.disabled) .cell {
-      color: $--color-front;
+      color: $--color-white;
       background-color: $--datepicker-active-color;
       border-radius: 18px;
     }

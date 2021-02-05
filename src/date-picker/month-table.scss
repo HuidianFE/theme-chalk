@@ -21,7 +21,7 @@
       }
       &.start-date .cell,
       &.end-date .cell {
-        color: $--color-front;
+        color: $--color-white;
       }
     }
 
@@ -56,12 +56,12 @@
     }
     &.start-date div,
     &.end-date div {
-      color: $--color-front;
+      color: $--color-white;
     }
 
     &.start-date .cell,
     &.end-date .cell {
-      color: $--color-front;
+      color: $--color-white;
       background-color: $--datepicker-active-color;
     }
 
@@ -76,7 +76,7 @@
     }
 
     &.current:not(.disabled) .cell {
-      color: $--color-front;
+      color: $--color-white;
       background-color: $--datepicker-active-color;
     }
   }
