@@ -21,7 +21,7 @@
   }
 
   i {
-    color: $--color-text-secondary;
+    color: $--menu-item-font-color;
   }
 
   &:hover,
@@ -90,7 +90,7 @@
         height: 60px;
         line-height: 60px;
         border-bottom: 2px solid transparent;
-        color: $--color-text-secondary;
+        color: $--menu-item-font-color;
 
         &:hover {
           background-color: $--background-color-hover;
@@ -111,7 +111,7 @@
         height: 36px;
         line-height: 36px;
         padding: 0 10px;
-        color: $--color-text-secondary;
+        color: $--menu-item-font-color;
       }
       & .el-menu-item.is-active,
       & .el-submenu.is-active > .el-submenu__title {
@@ -209,7 +209,19 @@
     vertical-align: middle;
   }
   @include when(active) {
-    color: $--color-primary;
+    position: relative;
+    color: $--color-front;
+    background-color: rgba($color: $--color-primary, $alpha: .4);
+
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 6px;
+      height: 100%;
+      background-color: $--color-primary;
+    }
     i {
       color: inherit;
     }
@@ -227,7 +239,7 @@
     &:hover {
       color: $--menu-item-font-color-active;
 
-      > .icon {
+      > .iconfont {
         color: $--color-primary;
       }
 
@@ -245,6 +257,9 @@
     padding: 0 45px;
     min-width: 200px;
     background-color: $--color-background;
+    &.is-active {
+      background-color: rgba($color: $--color-primary, $alpha: .4);
+    }
   }
   @include e(icon-arrow) {
     position: absolute;
@@ -259,7 +274,7 @@
       border-bottom-color: $--color-primary;
       color: $--menu-item-font-color-active;
 
-      > .icon {
+      > .iconfont {
         color: $--color-primary;
       }
 
