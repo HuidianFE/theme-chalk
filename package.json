@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "lib": "gulp build",
-    "pub": "sh ./publish.sh"
+    "pub": "npm publish"
   },
   "repository": {
     "type": "git",

@@ -139,9 +139,8 @@ $directions: rtl, ltr, ttb, btt;
     align-items: center;
     color: rgb(114, 118, 123);
     display: flex;
-    margin-bottom: 32px;
+    border-bottom: 1px solid $--border-color-light;
     padding: $--dialog-padding-primary;
-    padding-bottom: 0;
     & > :first-child {
       flex: 1;
       &:focus {

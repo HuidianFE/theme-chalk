@@ -278,7 +278,7 @@
   }
 
   @include e((append, prepend)) {
-    background-color: $--background-color-base;
+    background-color: $--input-disabled-fill;
     color: $--color-info;
     vertical-align: middle;
     display: table-cell;
